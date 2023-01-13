@@ -1,0 +1,147 @@
+molecules                                                    temps
+chloroform                                                   298.15
+dichloro(fluoro)methane                                      282.05
+dibromomethane                                               293.15 298.15
+dichloromethane                                              293.15 298.15
+methanal                                                     253.15 253.65
+methanoic_acid                                               293.15 298.15
+bromomethane                                                 276.65
+methanamide                                                  298.15
+nitromethane                                                 293.15 298.15
+methanol                                                     293.15 298.15
+1,1,1,2,2-pentachloroethane                                  293.15
+1,1,2,2-tetrachloroethane                                    293.15 298.15
+1,1-dichloroethene                                           293.15 298.15
+1,1,2-trichloroethane                                        293.15 298.15
+acetonitrile                                                 293.15 298.15
+1,2-dibromoethane                                            298.15
+1,1-dichloroethane                                           293.15 298.15
+1,2-dichloroethane                                           298.15
+methyl_formate                                               293.15 298.15
+bromoethane                                                  293.15 298.15
+chloroethane                                                 273.15 285.45
+2-chloroethanol                                              293.15
+ethanamide                                                   358.15
+N-methylformamide                                            292.15 298.15
+nitroethane                                                  298.15
+methoxymethane                                               240.00
+ethanol                                                      293.15 298.15
+1,2-ethanedithiol                                            293.15 298.15
+methyldisulfanylmethane                                      293.15 298.15
+methylsulfinylmethane                                        298.15
+methylsulfanylmethane                                        293.15 298.15
+2-aminoethanol                                               293.15 320.00
+ethane-1,2-diamine                                           293.15 298.15
+prop-2-enenitrile                                            298.15 350.45
+1,3-dioxolan-2-one                                           312.15
+propanenitrile                                               293.15 298.15
+1,2-dibromopropane                                           293.15 298.15
+1,3-dichloropropane                                          298.15
+(2R)-2-methyloxirane                                         298.15
+propan-2-one                                                 298.15
+methyl_acetate                                               293.15 298.15
+1,3-dioxolane                                                293.15 298.15
+2-iodopropane                                                293.15 298.15
+1-bromopropane                                               293.15 298.15
+N,N-dimethylformamide                                        298.15
+N-methylacetamide                                            320.00
+1-nitropropane                                               298.15
+2-nitropropane                                               298.15
+dimethoxymethane                                             293.15 298.15
+propane-1,2,3-triol                                          293.15 320.00
+propan-1-amine                                               293.15 298.15
+propan-2-amine                                               293.15 298.15
+2-methylpropane                                              243.65
+ethylsulfanylethane                                          293.15 298.15
+butane-1-thiol                                               293.15 298.15
+butan-1-ol                                                   293.15 298.15
+2-methylpropan-2-ol                                          320.00
+butane-1,4-diol                                              293.15 298.15 320.00
+(2-hydroxyethoxy)ethan-2-ol                                  288.15
+N-ethylethanamine                                            293.15 298.15
+butan-1-amine                                                293.15 298.15
+2-methylpropan-2-amine                                       293.15 298.15
+2-(2-hydroxyethylamino)ethanol                               320.00
+pyrimidine                                                   298.15
+furan                                                        293.15 298.15
+thiophene                                                    293.15 298.15
+1H-pyrrole                                                   293.15 298.15
+ethenyl_acetate                                              298.15
+oxolan-2-one                                                 293.15
+acetyl_acetate                                               293.15
+1,4-dichlorobutane                                           298.15
+oxolane                                                      298.15
+ethoxyethene                                                 293.15
+ethyl_acetate                                                293.15 298.15
+tetrahydrothiophene_1,1-dioxide                              320.00
+thiolane                                                     293.15 298.15
+1-bromobutane                                                293.15 298.15
+1-chlorobutane                                               293.15 298.15
+pyrrolidine                                                  293.15 298.15
+N,N-dimethylacetamide                                        298.15
+morpholine                                                   293.15
+pyridine                                                     293.15 298.15
+cyclopentanone                                               293.15 298.15
+1-cyclopropylethanone                                        293.15 298.15
+pentane-2,4-dione                                            298.15
+methyl_2-methylprop-2-enoate                                 298.15
+pentanenitrile                                               293.15 298.15
+ethyl_propanoate                                             298.15
+diethyl_carbonate                                            298.15
+pentan-1-ol                                                  293.15 298.15 320.00
+pentan-3-ol                                                  293.15 298.15
+2-methylbutan-2-ol                                           293.15 298.15 320.00
+pentane-1,5-diol                                             293.15 298.15
+pentan-3-amine                                               293.15 298.15
+1,2,3,4-tetrafluorobenzene                                   298.15
+1,2,3,5-tetrafluorobenzene                                   298.15
+1,3-difluorobenzene                                          293.15 298.15
+1,2-difluorobenzene                                          293.15 298.15
+fluorobenzene                                                293.15 298.15
+nitrobenzene                                                 293.15 298.15
+2-chloroaniline                                              293.15
+phenol                                                       318.15
+benzenethiol                                                 293.15 298.15
+2-methylpyridine                                             293.15 298.15
+3-methylpyridine                                             293.15 298.15
+4-methylpyridine                                             293.15 298.15
+cyclohexanone                                                293.15 298.15
+(E)-hex-2-ene                                                293.15
+hexan-2-one                                                  298.15
+2,4,6-trimethyl-1,3,5-trioxane                               293.15
+cyclohexanamine                                              298.15
+2-propan-2-yloxypropane                                      298.15
+1-methoxy-2-(2-methoxyethoxy)ethane                          293.15 298.15
+triethyl_phosphate                                           293.15 298.15 320.00
+N,N-diethylethanamine                                        293.15 298.15
+N-propan-2-ylpropan-2-amine                                  293.15 298.15
+trifluoromethylbenzene                                       293.15 298.15
+benzonitrile                                                 288.15
+benzaldehyde                                                 298.15
+toluene                                                      298.15
+methoxybenzene                                               293.15 298.15
+phenylmethanol                                               297.15
+2-methylphenol                                               308.15
+3-methylphenol                                               320.00
+4-methylphenol                                               313.15 320.00
+diethyl_propanedioate                                        293.15
+2,4-dimethylpentan-3-one                                     293.15 298.15
+heptan-2-one                                                 293.15 298.15
+ethenylbenzene                                               298.15
+1-phenylethanone                                             293.15 298.15
+methyl_benzoate                                              298.15
+methyl_2-hydroxybenzoate                                     298.15 320.00
+ethylbenzene                                                 298.15
+1,2-dimethylbenzene                                          293.15 298.15
+1,2-dimethoxybenzene                                         298.15
+2,4,6-trimethylpyridine                                      295.15 298.15
+octan-1-ol                                                   298.15 320.00
+1-butoxybutane                                               293.15 298.15
+N-butylbutan-1-amine                                         293.15 298.15
+isoquinoline                                                 303.15 320.00
+quinoline                                                    288.15 298.15
+(1-methylethyl)benzene                                       298.15
+1,2,4-trimethylbenzene                                       293.15 298.15
+2,6-dimethylheptan-4-one                                     293.15 298.15
+1-chloronaphthalene                                          298.15
+phenoxybenzene                                               303.15

@@ -1,0 +1,96 @@
+
+# Set path variables for running on this machine. Space-delimited keyword-based syntax. All must be set!
+
+# PATHS USED BY ALL SCRIPTS
+LAMMPS_EXE    /depot/bsavoie/apps/lammps/exe/lmp_mpi_180501                                          # -lammps_exe argument for various scripts
+ORCA_EXE      /depot/bsavoie/apps/orca_3_0_3/orca                                                    # -orca_exe argument for various scripts
+FF            /home/bsavoie/bin/taffi/Data/TAFFI.db
+CHARGE        0                                                                                      # molecular charge to use in the fragments
+GENS          2
+MODULE_STRING*module load gcc &> /dev/null\nexport PATH="/home/bsavoie/openmpi/1.8.8/bin:$PATH"\nexport LD_LIBRARY_PATH="/home/bsavoie/openmpi/1.8.8/lib:$LD_LIBRARY_PATH"\n\n* module load calls for shell scripts, special * delimit   
+
+# INTRAMOLECULAR MODE SPECIFIC ARGUMENTS
+PARAM_GEOOPT_PROCS  4
+PARAM_GEOOPT_WT     72
+PARAM_GEOOPT_Q      bsavoie
+PARAM_GEOOPT_SCHED  torque-halstead
+PARAM_GEOOPT_PPN    20
+PARAM_GEOOPT_SIZE   5                
+
+PARAM_BA_PROCS      4                
+PARAM_BA_WT	    4               
+PARAM_BA_Q	    standby          
+PARAM_BA_SCHED	    torque-halstead  
+PARAM_BA_PPN	    20
+PARAM_BA_SIZE       5                
+
+PARAM_D_PROCS       4
+PARAM_D_WT          72
+PARAM_D_Q           bsavoie
+PARAM_D_SCHED       torque-halstead
+PARAM_D_PPN         20
+PARAM_D_SIZE        5
+
+# FITTING WALLTIME AND QUEUE 
+PARAM_FIT_WT        72
+PARAM_FIT_Q         bsavoie
+
+# CHARGE SPECIFIC ARGUMENTS
+CHARGES_MD_PROCS    20                
+CHARGES_MD_WT	    4               
+CHARGES_MD_Q	    standby          
+CHARGES_MD_SCHED    torque-halstead  
+CHARGES_MD_PPN	    20
+CHARGES_MD_SIZE     1                
+CHARGES_MD_NPP	    1
+
+CHARGES_QC_PROCS    4
+CHARGES_QC_WT       4
+CHARGES_QC_Q        standby
+CHARGES_QC_SCHED    torque-halstead
+CHARGES_QC_PPN      20
+CHARGES_QC_SIZE     5
+
+
+# CHARGE SPECIFIC ARGUMENTS
+VDW_MD_PROCS        20                
+VDW_MD_WT	    4               
+VDW_MD_Q	    standby          
+VDW_MD_SCHED        torque-halstead  
+VDW_MD_PPN	    20
+VDW_MD_SIZE         1                
+VDW_MD_NPP          1
+
+VDW_QC_PROCS        4
+VDW_QC_WT           4
+VDW_QC_Q            standby
+VDW_QC_SCHED        torque-halstead
+VDW_QC_PPN          20
+VDW_QC_SIZE         5
+
+
+# FOM SPECIFIC ARGUMENTS
+FOM_GEOOPT_PROCS   4                                                                            # -p argument for recursive_submit*py scripts
+FOM_GEOOPT_WT      4                                                                            # -t argument for recursive_submit*py scripts
+FOM_GEOOPT_Q       standby                                                                      # -q argument for recursive_submit*py scripts
+FOM_GEOOPT_SCHED   torque-halstead                                                              # -sched argument for recursive_submit*py scripts
+FOM_GEOOPT_PPN     24                                                                           # -ppn argument for recursive_submit*py scripts
+FOM_GEOOPT_SIZE    6                                                                            # -size argument for recursive_submit*py scripts
+
+FOM_MD_GAS_PROCS   1
+FOM_MD_GAS_WT      4
+FOM_MD_GAS_Q       standby
+FOM_MD_GAS_NPP     1
+FOM_MD_GAS_SCHED   torque-halstead
+FOM_MD_GAS_PPN     24
+FOM_MD_GAS_SIZE    1
+
+FOM_MD_COND_PROCS  24
+FOM_MD_COND_WT     4
+FOM_MD_COND_Q      standby
+FOM_MD_COND_NPP    1
+FOM_MD_COND_SCHED  torque-halstead
+FOM_MD_COND_PPN    24
+FOM_MD_COND_SIZE   1
+
+FOM_TEMPS          /scratch/brown/bsavoie/taffi_parameterizations/main_group_plus_halides/temps.txt

@@ -1,0 +1,99 @@
+
+# Set path variables for running on this machine. Space-delimited keyword-based syntax. All must be set!
+
+# PATHS USED BY ALL SCRIPTS
+LAMMPS_EXE    /depot/bsavoie/apps/lammps/exe/lmp_mpi_180501                                          # -lammps_exe argument for various scripts
+ORCA_EXE      /depot/bsavoie/apps/orca_4_1_2/orca                                                    # -orca_exe argument for various scripts
+FF            /scratch/brown/lin1209/benchmark_WB97/empty.db                           # absolute location of existing TAFFI parameters
+CHARGE        0                                                                                      # molecular charge to use in the fragments
+BASIS         def2-TZVP                                                                              # basis set used in parameterizations
+FUNCTIONAL    wB97X-D3                                                                                  # DFT functional used in parameterizations
+GENS          2                                                                                      # depth for determining atomtypes/modes
+
+# Module load calls for submission scripts (e.g., if your batch scripts need to load an mpi module on your system), special * delimiting is used to retain spaces
+MODULE_STRING*module load gcc &> /dev/null\nexport PATH="/depot/bsavoie/apps/openmpi/3.0.1/bin:$PATH"\nexport LD_LIBRARY_PATH="/depot/bsavoie/apps/openmpi/3.0.1/lib:$LD_LIBRARY_PATH"\n\n* 
+
+# INTRAMOLECULAR MODE SPECIFIC ARGUMENTS       
+PARAM_GEOOPT_PROCS  4                       # number of processors per orca call in the geometry optimization loops
+PARAM_GEOOPT_WT     4                       # walltime for each job in the geometry optimization loops
+PARAM_GEOOPT_Q      standby                 # queue to submit geometry optimizations to
+PARAM_GEOOPT_SCHED  torque-halstead         # scheduler-type for generating batch submission scripts (various torque/slurm types can be found in the orca_submit.py script)
+PARAM_GEOOPT_PPN    24                      # processors per node for the geometry optimization loops
+PARAM_GEOOPT_SIZE   6                       # number of optimization calculations to bundle into each job in the optimization loops
+
+PARAM_BA_PROCS      4                
+PARAM_BA_WT	    4               
+PARAM_BA_Q	    standby          
+PARAM_BA_SCHED	    torque-halstead  
+PARAM_BA_PPN	    24
+PARAM_BA_SIZE       6                
+
+PARAM_D_PROCS       4
+PARAM_D_WT          4
+PARAM_D_Q           standby
+PARAM_D_SCHED       torque-halstead
+PARAM_D_PPN         24
+PARAM_D_SIZE        6
+
+# FITTING WALLTIME AND QUEUE 
+PARAM_FIT_WT        72
+PARAM_FIT_Q         bsavoie
+PARAM_FIT_PPN       1
+
+# CHARGE SPECIFIC ARGUMENTS
+CHARGES_MD_PROCS    24                
+CHARGES_MD_WT	    4               
+CHARGES_MD_Q	    standby          
+CHARGES_MD_SCHED    torque-halstead  
+CHARGES_MD_PPN	    24
+CHARGES_MD_SIZE     1                
+CHARGES_MD_NPP	    1
+
+CHARGES_QC_PROCS    4
+CHARGES_QC_WT       4
+CHARGES_QC_Q        standby
+CHARGES_QC_SCHED    torque-halstead
+CHARGES_QC_PPN      24
+CHARGES_QC_SIZE     6
+
+
+# CHARGE SPECIFIC ARGUMENTS
+VDW_MD_PROCS        24                
+VDW_MD_WT	    4               
+VDW_MD_Q	    standby          
+VDW_MD_SCHED        torque-halstead  
+VDW_MD_PPN	    24
+VDW_MD_SIZE         1                
+VDW_MD_NPP          1
+
+VDW_QC_PROCS        4
+VDW_QC_WT           4
+VDW_QC_Q            standby
+VDW_QC_SCHED        torque-halstead
+VDW_QC_PPN          24
+VDW_QC_SIZE         6
+
+
+# FOM SPECIFIC ARGUMENTS
+FOM_GEOOPT_PROCS   4                                                                            
+FOM_GEOOPT_WT      4                                                                            
+FOM_GEOOPT_Q       standby                                                                      
+FOM_GEOOPT_SCHED   torque-halstead                                                              
+FOM_GEOOPT_PPN     24                                                                           
+FOM_GEOOPT_SIZE    6                                                                            
+
+FOM_MD_GAS_PROCS   1
+FOM_MD_GAS_WT      4
+FOM_MD_GAS_Q       standby
+FOM_MD_GAS_NPP     1
+FOM_MD_GAS_SCHED   torque-halstead
+FOM_MD_GAS_PPN     24
+FOM_MD_GAS_SIZE    1
+
+FOM_MD_COND_PROCS  24
+FOM_MD_COND_WT     4
+FOM_MD_COND_Q      standby
+FOM_MD_COND_NPP    1
+FOM_MD_COND_SCHED  torque-halstead
+FOM_MD_COND_PPN    24
+FOM_MD_COND_SIZE   1
